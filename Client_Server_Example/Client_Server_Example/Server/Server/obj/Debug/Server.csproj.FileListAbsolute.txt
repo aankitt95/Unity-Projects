@@ -1,0 +1,24 @@
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\bin\Debug\Server.exe.config
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\bin\Debug\Server.exe
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\bin\Debug\Server.pdb
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\obj\Debug\Server.exe
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\obj\Debug\Server.pdb
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\obj\Debug\Server.Form1.resources
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\bin\Debug\Database.mdf
+C:\Users\Tenk Gergely.DESKTOP-77I128M\source\repos\Server\Server\bin\Debug\Database_log.ldf
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\bin\Debug\Database.mdf
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\bin\Debug\Database_log.ldf
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\bin\Debug\Server.exe.config
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\bin\Debug\Server.exe
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\bin\Debug\Server.pdb
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\obj\Debug\Server.Form1.resources
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\obj\Debug\Server.Properties.Resources.resources
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\obj\Debug\Server.exe
+E:\CODES\UNITY\Unity3D_Projects\GitRepo\Unity3D\Client_Server_Example\Client_Server_Example\Server\Server\obj\Debug\Server.pdb

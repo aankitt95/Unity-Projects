@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Platform
+  - Ground
+  - PlatformMover
+  - movingPlatform
+  - MovingPlatform
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Platform
+  - Ground
+  - Background
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3268720073
+    locked: 0
+  - name: Middleground
+    uniqueID: 2351434599
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2472344051
+    locked: 0
+  - name: Foreground
+    uniqueID: 3616228313
+    locked: 0
