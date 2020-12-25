@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement; // include so we can load new scenes
+using UnityStandardAssets.CrossPlatformInput;
 
 public class CharacterController2D : MonoBehaviour {
 
@@ -47,6 +48,7 @@ public class CharacterController2D : MonoBehaviour {
 	bool facingRight = true;
 	bool isGrounded = false;
 	bool isRunning = false;
+	bool _canDoubleJump = false;
 
 	// store the layer the player is on (setup in Awake)
 	int _playerLayer;
@@ -88,7 +90,7 @@ public class CharacterController2D : MonoBehaviour {
 			return;
 
 		// determine horizontal velocity change based on the horizontal input
-		_vx = Input.GetAxisRaw ("Horizontal");
+		_vx = CrossPlatformInputManager.GetAxisRaw ("Horizontal");
 
 		// Determine if running based on the horizontal movement
 		if (_vx != 0) 
@@ -109,22 +111,30 @@ public class CharacterController2D : MonoBehaviour {
 		// whatIsGround layer
 		isGrounded = Physics2D.Linecast(_transform.position, groundCheck.position, whatIsGround);  
 
+		//allow double jump after grounded
+		if(isGrounded){
+			_canDoubleJump = true;
+		}
+		
+		
 		// Set the grounded animation states
 		_animator.SetBool("Grounded", isGrounded);
+	
 
-		if(isGrounded && Input.GetButtonDown("Jump")) // If grounded AND jump button pressed, then allow the player to jump
+		if(isGrounded && CrossPlatformInputManager.GetButtonDown("Jump")) // If grounded AND jump button pressed, then allow the player to jump
 		{
-			// reset current vertical motion to 0 prior to jump
-			_vy = 0f;
-			// add a force in the up direction
-			_rigidbody.AddForce (new Vector2 (0, jumpForce));
-			// play the jump sound
-			PlaySound(jumpSFX);
+			DoJump();
+		}
+		else if(_canDoubleJump && CrossPlatformInputManager.GetButtonDown("Jump")) //if candouble jump and jump button pressed,then allow player to double jump
+		{
+			DoJump();
+			//Disable doublejump after one doublejump
+			_canDoubleJump= false;
 		}
 	
 		// If the player stops jumping mid jump and player is not yet falling
 		// then set the vertical velocity to 0 (he will start to fall from gravity)
-		if(Input.GetButtonUp("Jump") && _vy>0f)
+		if(CrossPlatformInputManager.GetButtonUp("Jump") && _vy>0f)
 		{
 			_vy = 0f;
 		}
@@ -171,6 +181,15 @@ public class CharacterController2D : MonoBehaviour {
 		{
 			this.transform.parent = other.transform;
 		}
+	}
+	
+	void DoJump(){
+		// reset current vertical motion to 0 prior to jump
+			_vy = 0f;
+			// add a force in the up direction
+			_rigidbody.AddForce (new Vector2 (0, jumpForce));
+			// play the jump sound
+			PlaySound(jumpSFX);
 	}
 
 	// if the player exits a collision with a moving platform, then unchild it
@@ -267,5 +286,8 @@ public class CharacterController2D : MonoBehaviour {
 		_transform.parent = null;
 		_transform.position = spawnloc;
 		_animator.SetTrigger("Respawn");
+	}
+	public void EnemyBounce(){
+		DoJump();
 	}
 }
