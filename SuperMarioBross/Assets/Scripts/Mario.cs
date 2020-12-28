@@ -319,10 +319,10 @@ public class Mario : MonoBehaviour {
 			animator.SetLayerWeight(animator.GetLayerIndex("Mega"), 0);
 			animator.SetLayerWeight(animator.GetLayerIndex("Death"), 1);
 			yield return new WaitForSecondsRealtime(1f);
-			gameover.SetActive(true); 
-			yield return new WaitForSecondsRealtime(4f);
+			gameover.SetActive(false); 
+			yield return new WaitForSecondsRealtime(2f);
 			UnityEngine.Time.timeScale = 1;
-			SceneManager.LoadScene("1-1");
+			SceneManager.LoadScene("GameLose");
 		} else {
 			dimensions = new Vector2(1, 1);
 			UnityEngine.Time.timeScale = 0;
