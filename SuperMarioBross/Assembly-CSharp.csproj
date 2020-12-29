@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\PointText.cs" />
     <Compile Include="Assets\Scripts\RectCollider.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\ScreenshotUtility.cs" />
     <Compile Include="Assets\Scripts\TileBreak.cs" />
     <Compile Include="Assets\Scripts\Time.cs" />
     <Reference Include="UnityEngine">
